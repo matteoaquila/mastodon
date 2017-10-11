@@ -1,30 +1,178 @@
 ---
 it:
   about:
-    about_mastodon_html: Mastodon è un social network <em>gratuito e open-source</em>. Un'alternativa <em>decentralizzata</em> alle piattaforme commerciali che evita che una singola compagnia monopolizzi il tuo modo di comunicare. Scegli un server di cui ti fidi &mdash; qualunque sia la tua scelta, potrai interagire con chiunque altro. Chiunque può sviluppare un suo server Mastodon e partecipare alla vita del <em>social network</em>.
-    about_this: A proposito di questo server
-    closed_registrations: Al momento le iscrizioni a questo server sono chiuse.
+    about_mastodon_html: Mastodon è un social network basato su tecnologie e software gratuiti e open-source. È decentralizzato come il sistema mail.
+    about_hashtag_html: Questi sono i post pubblici che parlano di <strong>#%{hashtag}</strong>. Puoi partecipare alla discussione se possiedi un account nella federazione di questo server.
+    about_this: A proposito di
+    closed_registrations: Al momento le iscrizioni a questo server sono chiuse. Puoi comunque ottenere l'accesso al suo stesso network registrando un account su un server federato e partecipando da lì.
     contact: Contatti
+    contact_missing: Non impostato
+    contact_unavailable: Non disponibile
     description_headline: Cos'è %{domain}?
     domain_count_after: altri server
     domain_count_before: Connesso a
-    other_instances: Altri server
+    extended_description_html: |
+      <h3>Un buon posto per delle regole</h3>
+      <p>Non è ancora stata scritta una versione estesa delle regole.</p>
+    features:
+      humane_approach_body: Imparando dalle pecche di altri social network, Mastodon mira a scelte etiche per combattere l'utilizzo errato dei mezzi di comunicazione.
+      humane_approach_title: Un approccio più umano
+      not_a_product_body: Mastodon non ha scopo commerciale. Nessuna pubblicità, nessuna raccolta di dati, nessuna area bloccata. Non esiste un'autorità generale.
+      not_a_product_title: Sei una persona, non un prodotto
+      real_conversation_body: Con 500 caratteri a tua disposizione e la possibilità di aggiungere avvertenze ai singoli post, puoi esprimerti nel modo che più preferisci.
+      real_conversation_title: Costruito per conversazioni reali
+      within_reach_body: Grazie a numerose app per iOS, Android e altre piattaforme, costruite con un API a misura di sviluppatore, potrai connetterti dovunque con i tuoi amici.
+      within_reach_title: Sempre a portata di mano
+		find_another_instance: Trova un altro server
+    generic_description: "%{domain} è un server appartenente alla federazione"
+    hosted_on: Mastodon è ospitato da %{domain}
+    learn_more: Scopri di più
+		other_instances: Lista dei server
     source_code: Codice sorgente
     status_count_after: status
     status_count_before: Che hanno pubblicato
     user_count_after: utenti
     user_count_before: Casa di
+		what_is_mastodon: Cosa è Mastodon?
   accounts:
     follow: Segui
     followers: Seguaci
     following: Seguiti
+		media: Media
     nothing_here: Qui non c'è nulla!
     people_followed_by: Persone seguite da %{name}
     people_who_follow: Persone che seguono %{name}
-    posts: Posts
+    posts: Toots
+		posts_with_replies: Toots con risposte
     remote_follow: Segui da remoto
+		reserved_username: Username riservato
+		roles:
+			admin: Amministratore
     unfollow: Non seguire più
-  application_mailer:
+	admin:
+    accounts:
+      are_you_sure: Sei sicuro?
+      confirm: Conferma
+      confirmed: Confermato
+      disable_two_factor_authentication: Disattiva 2FA
+      display_name: Mostra nome
+      domain: Dominio
+      edit: Modifica
+      email: E-mail
+      feed_url: Feed URL
+      followers: Seguaci
+      followers_url: URL Seguaci
+      follows: Segue
+      inbox_url: URL Posta in arrivo
+      ip: IP
+      location:
+        all: Tutti
+        local: Locali
+        remote: Remoti
+        title: Posizione
+      media_attachments: Allegati multimediali
+      moderation:
+        all: Tutti
+        silenced: Silenziati
+        suspended: Sospesi
+        title: Moderazione
+      moderation_notes: Avvisi di moderazione
+      most_recent_activity: Attività più recenti
+      most_recent_ip: IP più recente
+      not_subscribed: Non iscritto
+      order:
+        alphabetic: Alfabetico
+        most_recent: Più recente
+        title: Ordine
+      outbox_url: URL Posta in uscita
+      perform_full_suspension: Applica sospensione completa
+      profile_url: URL Profilo
+      protocol: Protocollo
+      public: Pubblico
+      push_subscription_expires: Iscrizione PuSH in scadenza
+      redownload: Aggiorna avatar
+      reset: Reset
+      reset_password: Reset password
+      resubscribe: Iscriviti nuovamente
+      salmon_url: Salmon URL
+      search: Cerca
+      shared_inbox_url: URL Posta condivisa in uscita
+      show:
+        created_reports: Segnalazioni create da questo profilo
+        report: segnala
+        targeted_reports: Segnalazioni fatte su questo profilo
+      silence: Silenzia
+      statuses: Stati
+      subscribe: Iscriviti
+      title: Account
+      undo_silenced: Annulla silenzio
+      undo_suspension: Annulla sospensione
+      unsubscribe: Disiscriviti
+      username: Username
+			web: Web
+			
+		account_moderation_notes:
+      account: Moderatore
+      created_at: Data
+      create: Crea
+      created_msg: Avviso di moderazione creato con successo!
+      delete: Cancella
+			destroyed_msg: Avviso di moderazione cancellato con successo!
+			
+		custom_emojis:
+      copied_msg: Copia locale delle emoji creata con successo
+      copy: Copia
+      copy_failed_msg: Impossibile creare copia locale dell'emoji
+      created_msg: Emoji creata con successo!
+      delete: Elimina
+      destroyed_msg: Emoji eliminata con successo!
+      disable: Disttiva
+      disabled_msg: Emoji disattivata
+      emoji: Emoji
+      enable: Attiva
+      enabled_msg: Emoji attivata
+      image_hint: PNG fino a 50KB
+      new:
+        title: Aggiungi nuova emoji personalizzata
+      shortcode: Shortcode
+      shortcode_hint: Al massimo 2 caratteri, solo caratteri alfanumerici e underscore "_"
+      title: Emoji personalizzate
+			upload: Carica
+		domain_blocks:
+      add_new: Aggiungi nuovo
+      created_msg: Blocco domini in corso
+      destroyed_msg: Blocco domini annullato
+      domain: Dominio
+      new:
+        create: Crea blocco
+        hint: Il blocco domini non impedirà la creazione di account nel database, ma applicherà automaticamente specifiche regole di moderazione sugli account preesistenti selezionati.
+        severity:
+          desc_html: "<strong>Silenzia</strong> renderà invisibili i post dell'account per chiunque non sia suo seguace. <strong>Sospendi</strong> rimuoverà tutti i contenuti, multimediali e non, dell'account e i dati del profilo. Usa <strong>Nessuno</strong> se vuoi eliminare solo i file multimediali."
+          noop: Nessuno
+          silence: Silenzia
+          suspend: Sospendi
+				title: Nuovo blocco domini
+			reject_media: Elimina file multimediali
+			reject_media_hint: Elimina localmente ogni file scaricato e ne impedisce il download nel futuro. Irrilevante per le sospensioni.
+  		severities:
+        noop: Nessuna
+        silence: Silenzia
+        suspend: Sospendi
+			severity: Severità
+			show:
+        affected_accounts:
+          one: Hai selezionato un account nel database
+          other: "Hai selezionato %{count} account nel database"
+        retroactive:
+          silence: Rimuovi Silenzia per gli account preesistenti da questo dominio 
+          suspend: Rimuovi Sospendi per gli account preesistenti da questo dominio
+        title: Annulla blocco per %{domain}
+        undo: Annulla
+      title: Blocchi dominio
+			undo: Annulla
+			
+			
+	application_mailer:
     settings: 'Cambia le impostazioni per le e-mail: %{link}'
     signature: Notifiche Mastodon da %{instance}
     view: 'Guarda:'
